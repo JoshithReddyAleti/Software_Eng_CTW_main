@@ -18,6 +18,7 @@ const MessagesPage: React.FC<MessagesPageProps> = ({ contactProperty, onBack }) 
   );
   const [newMessage, setNewMessage] = useState('');
 
+  // User has to be logged in to view and send messages.
   if (!user) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
