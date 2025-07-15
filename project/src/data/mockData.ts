@@ -518,7 +518,7 @@ export const mockProperties: Property[] = [
     createdAt: new Date('2024-02-23'),
   },
 ];
-
+// Mock data for messaging between seller and buyer
 export const mockMessages: Message[] = [
   {
     id: '1',
