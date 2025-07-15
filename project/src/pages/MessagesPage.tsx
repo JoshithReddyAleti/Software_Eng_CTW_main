@@ -1,3 +1,5 @@
+// This part of the code ensures the messaging works properly for the seller and buyer. 
+
 import React, { useState } from 'react';
 import { MessageCircle, Send, ArrowLeft } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
