@@ -1,5 +1,7 @@
+// types folder outside of data folder, changes directory to types folder
 import { User, Property, Message } from '../types';
 
+// Users are either buyers or sellers with appropriate information
 export const mockUsers: User[] = [
   {
     id: '1',
@@ -113,6 +115,7 @@ export const mockUsers: User[] = [
   },
 ];
 
+// Attributes of properties
 export const mockProperties: Property[] = [
   {
     id: '1',
