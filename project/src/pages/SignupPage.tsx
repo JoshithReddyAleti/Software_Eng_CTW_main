@@ -28,11 +28,13 @@ const SignupPage: React.FC<SignupPageProps> = ({ onSuccess }) => {
     setError('');
   };
 
+  // Handles submission of user data
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
     setError('');
 
+    // Password parameters for user
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match');
       setLoading(false);
@@ -53,12 +55,14 @@ const SignupPage: React.FC<SignupPageProps> = ({ onSuccess }) => {
         role: formData.role,
         phone: formData.phone,
       });
-      
+
+      // If successful, creates account otherwise if email is already in use, throws error
       if (success) {
         onSuccess();
       } else {
         setError('Email already exists');
       }
+      // Throws error if something went wrong
     } catch (err) {
       setError('An error occurred. Please try again.');
     } finally {
@@ -163,6 +167,7 @@ const SignupPage: React.FC<SignupPageProps> = ({ onSuccess }) => {
                     className="block w-full px-4 py-3 border border-gray-300 rounded-xl shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                     placeholder="Create a password"
                   />
+                  {/* Button to hide or unhide password to user */}
                   <button
                     type="button"
                     className="absolute inset-y-0 right-0 pr-3 flex items-center"
