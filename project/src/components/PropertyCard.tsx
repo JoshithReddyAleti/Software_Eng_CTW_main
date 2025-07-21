@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';  // Had to comment out because website would not work
 import { Heart, MapPin, Bed, Bath, Square, Calendar } from 'lucide-react';
-import { supabase } from '../lib/supabase';
+//import { supabase } from '../lib/supabase';  // Have not yet implemented supabase connection
 import { useAuth } from '../contexts/AuthContext';
 
 type Property = {
