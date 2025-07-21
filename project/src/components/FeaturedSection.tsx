@@ -19,9 +19,9 @@ const FeaturedSection: React.FC<FeaturedSectionProps> = ({ properties, onViewPro
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50"> {/* This creates a section for the featured properties */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16"> {/* Centers text for user to see */}
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Featured Properties
           </h2>
@@ -30,7 +30,8 @@ const FeaturedSection: React.FC<FeaturedSectionProps> = ({ properties, onViewPro
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> {/* Creates grid to display featured properties*/}
+          {/* Display featured properties in their respective grids */}
           {featuredProperties.map((property, index) => (
             <div
               key={property.id}
