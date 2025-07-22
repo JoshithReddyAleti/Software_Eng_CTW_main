@@ -1,3 +1,4 @@
+// this is a featured section
 import React from 'react';
 import { Star, MapPin, Bed, Square } from 'lucide-react';
 import { Property } from '../types';
