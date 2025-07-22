@@ -1,3 +1,4 @@
+// This code creates a responsive header/navigation component 
 import React, { useState } from 'react';
 import { Home, User, LogOut, Menu, X, MessageCircle, Heart, Search } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
