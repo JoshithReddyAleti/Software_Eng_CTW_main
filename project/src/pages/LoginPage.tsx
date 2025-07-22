@@ -23,7 +23,7 @@ const LoginPage: React.FC<LoginPageProps> = ({ onSuccess }) => {
     });
     setError('');
   };
-
+ // Handle form submission - performs login authentication
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
