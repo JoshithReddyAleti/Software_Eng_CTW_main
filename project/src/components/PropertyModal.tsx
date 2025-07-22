@@ -4,7 +4,7 @@ import { Property } from '../types';
 import { useAuth } from '../contexts/AuthContext';
 import { useData } from '../contexts/DataContext';
 import { mockUsers } from '../data/mockData';
-
+// Define the props interface for the PropertyModal component
 interface PropertyModalProps {
   property: Property;
   isOpen: boolean;
